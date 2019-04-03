@@ -122,11 +122,14 @@ class SaveMessage:
         self.messages_only = messages_only
 
     def message_handler(self, m):
-        if m.type == "366":
-            logging.info(f"Successfully joined channel: #{m.channel}")
-        if m.type == "PRIVMSG" or not self.messages_only:
-            self.add_message_to_db(m, time.time() - self.last_message_t)
-            self.last_message_t = time.time()
+        try:
+            if m.type == "366":
+                logging.info(f"Successfully joined channel: #{m.chan}")
+            elif m.type == "PRIVMSG" or not self.messages_only:
+                self.add_message_to_db(m, time.time() - self.last_message_t)
+                self.last_message_t = time.time()
+        except Exception as e:
+            logging.error(e)
             
     def add_message_to_db(self, m, time_since_last):
         self.db.add_item(m.full_message, json.dumps(m.tags), m.command, m.user, m.type, m.params, m.channel, m.message, round(self.last_message_t), time_since_last)
