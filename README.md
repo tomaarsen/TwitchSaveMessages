@@ -75,6 +75,7 @@ Note that this bot creates a folder called "Logging" parallel to the folder this
 * [TwitchMarkovChain](https://github.com/CubieDev/TwitchMarkovChain)
 * [TwitchCubieBot](https://github.com/CubieDev/TwitchCubieBot)
 * [TwitchDeathCounter](https://github.com/CubieDev/TwitchDeathCounter)
+* [TwitchSuggestDinner](https://github.com/CubieDev/TwitchSuggestDinner)
 * [TwitchPickUser](https://github.com/CubieDev/TwitchPickUser)
 * [TwitchPackCounter](https://github.com/CubieDev/TwitchPackCounter) (Streamer specific bot)
 * [TwitchDialCheck](https://github.com/CubieDev/TwitchDialCheck) (Streamer specific bot)
