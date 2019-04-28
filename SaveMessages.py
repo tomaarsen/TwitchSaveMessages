@@ -116,6 +116,7 @@ class SaveMessage:
                                   callback=self.message_handler,
                                   capability=["membership", "tags", "commands"],
                                   live=True)
+        self.ws.start_bot()
 
     def setSettings(self, host, port, chan, nick, auth, messages_only):
         self.host = host
