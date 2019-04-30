@@ -63,12 +63,6 @@ I got my real OAuth token from https://twitchapps.com/tmi/.
 
 ---
 
-# Note
-
-Note that this bot creates a folder called "Logging" parallel to the folder this script exists in, where the logging information of this script is stored. This is perhaps not ideal for most users, but works well in my case, as it allows all of my bot's logs to be stored in one location, where I can easily access them.
-
----
-
 # Other Twitch Bots
 
 * [TwitchGoogleTranslate](https://github.com/CubieDev/TwitchGoogleTranslate)
