@@ -1,6 +1,6 @@
 
 from TwitchWebsocket import TwitchWebsocket
-import random, time, json, sqlite3, logging, os
+import random, time, json, logging, os
 
 from Log import Log
 Log(__file__)
